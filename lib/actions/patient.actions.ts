@@ -76,7 +76,7 @@ export const registerPatient = async ({
     // Create new patient document -> https://appwrite.io/docs/references/cloud/server-nodejs/databases#createDocument
     console.log("===============");
     console.log(
-      `${ENDPOINT}/storage/buckets/${BUCKET_ID}/files/${file.$id}/view??project=${PROJECT_ID}`,
+      `${ENDPOINT}/storage/buckets/${BUCKET_ID}/files/${file!.$id}/view??project=${PROJECT_ID}`,
     );
     const newPatient = await databases.createDocument(
       DATABASE_ID!,
