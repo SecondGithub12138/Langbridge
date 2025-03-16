@@ -8,7 +8,7 @@ export default withSentryConfig(
     // https://github.com/getsentry/sentry-webpack-plugin#options
 
     org: "langbridge-rf",
-    project: "care-pulse",
+    project: "javascript-nextjs",
 
     // Only print logs for uploading source maps in CI
     silent: !process.env.CI,
