@@ -373,6 +373,13 @@ const RegisterForm = ({ user }: { user: User }) => {
             label="I acknowledge that I have reviewed and agree to the
             privacy policy"
           />
+
+          <CustomFormField
+            fieldType={FormFieldType.CHECKBOX}
+            control={form.control}
+            name="NotificationConsent"
+            label="I consent to receive notifications and updates about my appointments."
+          />
         </section>
 
         <SubmitButton isLoading={isLoading}>Submit and Continue</SubmitButton>

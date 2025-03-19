@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"; // Import Link component
 
 import { AppointmentForm } from "@/components/forms/AppointmentForm";
 import { getPatient } from "@/lib/actions/patient.actions";
@@ -23,6 +24,9 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
             userId={userId}
             type="create"
           />
+          <Link href="/doctors" className="text-blue-500 underline mt-4">
+            Meet Our Therapist
+          </Link>
 
           <p className="copyright mt-10 py-12">© 2025 Langbridge</p>
         </div>
