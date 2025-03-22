@@ -21,6 +21,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import CustomFormField, { FormFieldType } from "../CustomFormField";
 import SubmitButton from "../SubmitButton";
 import { Form } from "../ui/form";
+import { Link } from "lucide-react";
 
 export const AppointmentForm = ({
   userId,
@@ -165,7 +166,14 @@ export const AppointmentForm = ({
                 </SelectItem>
               ))}
             </CustomFormField>
-
+            <a
+              href="/doctors"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex cursor-pointer items-center gap-2 text-dark-700 underline"
+            >
+              <p className="text-dark-700 text-sm font-medium">Meet Our Therapist</p>
+            </a>
             <CustomFormField
               fieldType={FormFieldType.DATE_PICKER}
               control={form.control}

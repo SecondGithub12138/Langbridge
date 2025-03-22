@@ -24,10 +24,6 @@ const Appointment = async ({ params: { userId } }: SearchParamProps) => {
             userId={userId}
             type="create"
           />
-          <Link href="/doctors" className="text-blue-500 underline mt-4">
-            Meet Our Therapist
-          </Link>
-
           <p className="copyright mt-10 py-12">© 2025 Langbridge</p>
         </div>
       </section>
